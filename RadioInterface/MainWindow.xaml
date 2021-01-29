@@ -27,9 +27,10 @@
         <Button Content="SWITCH" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="2" FontSize="50" Click="Swtich_Click"/>
 
 
-        <TextBox x:Name="Channel_Display" Grid.ColumnSpan="2" HorizontalAlignment="Center" Text="No Channel" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="70"/>
-        <TextBox x:Name="Status_Display" HorizontalAlignment="Center" Text="OFF" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="70" Grid.Column="3" Background="Red"/>
-
+        <TextBox IsReadOnly="True" x:Name="Channel_Display" Grid.ColumnSpan="2" HorizontalAlignment="Center" Text="No Channel" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="70"/>
+        <TextBox IsReadOnly="True" x:Name="Status_Display" HorizontalAlignment="Center" Text="OFF" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="70" Grid.Column="3" Background="Red"/>
+        
+        
 
     </Grid>
 </Window>

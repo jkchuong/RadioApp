@@ -34,7 +34,9 @@ namespace RadioInterface
             string channel = (sender as Button).Content.ToString();
             int channelInt = Int16.Parse(channel);
 
-            _radio.Channel = channelInt;
+            // _radio.Channel = channelInt;
+
+            _radio.SetChannel(channelInt);
 
             Channel_Display.Text = _radio.Play();
         }
@@ -45,11 +47,13 @@ namespace RadioInterface
             
             if (_radio.On)
             {
+                Channel_Display.Text = _radio.Play();
                 Status_Display.Text = "ON";
                 Status_Display.Background = Brushes.Green;
             }
             else
             {
+                Channel_Display.Text = "Radio is off";
                 Status_Display.Text = "OFF";
                 Status_Display.Background = Brushes.Red;
             }
